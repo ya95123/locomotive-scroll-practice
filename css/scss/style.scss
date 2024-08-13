@@ -10,7 +10,7 @@
 
 html,
 body {
-  height: 0;
+  height: 100%;
 }
 
 body {
@@ -30,12 +30,22 @@ section {
   }
 }
 
+.c-scrollbar {
+  opacity: 1;
+
+  &_thumb {
+    margin: 0 2px 0 0;
+    background-color: var(--white);
+  }
+}
+
 .banner {
   width: 100%;
   height: 100svh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #333;
 
   &-title {
     font-size: clamp(36px, calc((72 / 1920) * 100vw), 72px);
@@ -62,7 +72,8 @@ section {
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.7;
+    pointer-events: none;
   }
 
   &-title {
