@@ -14,10 +14,10 @@
     <!-- banner -->
     <div data-scroll-section>
       <section id="banner" class="banner" data-scroll data-scroll-speed="-4">
-        <h1 class="banner-title">
+        <h1 class="banner-title" data-scroll>
           Locomotive Scroll Practice
           <br>
-          <button id="banner-btn" class="banner-btn">
+          <button id="banner-btn" class="banner-btn" data-scroll>
             Scroll Down
           </button>
         </h1>
@@ -28,8 +28,10 @@
     <div data-scroll-section>
       <section id="img-1" class="image" data-scroll>
         <img class="image-bg" src="https://picsum.photos/1920/1080/?random=1">
-        <h2 class="h2 image-title" data-scroll data-scroll-speed="2">
-          OOOOOOO
+        <h2 class="h2 image-title" data-scroll data-scroll-repeat data-scroll-speed="2">
+          <span>
+            OOOOOOO
+          </span>
         </h2>
       </section>
     </div>
@@ -39,8 +41,10 @@
     <div data-scroll-section>
       <section id="img-2" class="image" data-scroll>
         <img class="image-bg" src="https://picsum.photos/1920/1080/?random=2">
-        <h2 class="h2 image-title" data-scroll data-scroll-speed="2">
-          OOOOOOO
+        <h2 class="h2 image-title" data-scroll data-scroll-repeat data-scroll-speed="2">
+          <span>
+            OOOOOOO
+          </span>
         </h2>
       </section>
     </div>
@@ -48,14 +52,16 @@
 
     <!-- btn open -->
     <div data-scroll-section>
-      <section id="open" class="open" data-scroll>
-        <h2 class="h2 open-title">Do you want to open a surprise?</h2>
-        <button id="open-btn" class="open-btn">
+      <section id="open" class="open">
+        <h2 class="h2 open-title" data-scroll>
+          Do you want to open a surprise?
+        </h2>
+        <button id="open-btn" class="open-btn" data-scroll>
           Open !
         </button>
 
         <div class="open-content hide">
-          <h3 class="h3 open-content__title">
+          <h3 class="h3 open-content__title" data-scroll>
             SURPRISE !!!
           </h3>
         </div>

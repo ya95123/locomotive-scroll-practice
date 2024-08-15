@@ -39,6 +39,23 @@ section {
   }
 }
 
+.h2,
+.h3 {
+  span {
+    transform: translateY(50%);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-duration: 1s;
+  }
+
+  &.is-inview {
+    span {
+      transform: none;
+      opacity: 1;
+    }
+  }
+}
+
 .h2 {
   font-size: clamp(28px, calc((46 / 1920) * 100vw), 46px);
   line-height: 1.25;
@@ -56,6 +73,19 @@ section {
   justify-content: center;
   align-items: center;
   background-color: #333;
+
+  &-title,
+  &-btn {
+    transform: translateY(50%);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-duration: 1s;
+
+    &.is-inview {
+      transform: none;
+      opacity: 1;
+    }
+  }
 
   &-title {
     font-size: clamp(36px, calc((72 / 1920) * 100vw), 72px);

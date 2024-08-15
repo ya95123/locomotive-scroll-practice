@@ -45,6 +45,25 @@ section {
   background-color: var(--white);
 }
 
+.h2 span,
+.h3 span {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  opacity: 0;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+.h2.is-inview span,
+.h3.is-inview span {
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
+}
+
 .h2 {
   font-size: clamp(28px, 2.3958333333vw, 46px);
   line-height: 1.25;
@@ -68,6 +87,22 @@ section {
       -ms-flex-align: center;
           align-items: center;
   background-color: #333;
+}
+.banner-title, .banner-btn {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  opacity: 0;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+.banner-title.is-inview, .banner-btn.is-inview {
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
 }
 .banner-title {
   font-size: clamp(36px, 3.75vw, 72px);
