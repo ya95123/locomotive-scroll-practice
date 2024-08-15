@@ -11,28 +11,55 @@
 
 <body>
   <div data-scroll-container>
+    <!-- banner -->
     <div data-scroll-section>
       <section id="banner" class="banner" data-scroll data-scroll-speed="-4">
         <h1 class="banner-title">
           Locomotive Scroll Practice
+          <br>
+          <button id="banner-btn" class="banner-btn">
+            Scroll Down
+          </button>
         </h1>
       </section>
+    </div>
 
-      <div class="content" data-scroll data-scroll-speed="0">
-        <section id="image" class="image">
-          <img class="image-bg" src="https://picsum.photos/1920/1080/?random=1">
-          <h2 class="image-title" data-scroll data-scroll-speed="2">
-            OOOOOOO
-          </h2>
-        </section>
+    <!-- img-1 -->
+    <div data-scroll-section>
+      <section id="img-1" class="image" data-scroll>
+        <img class="image-bg" src="https://picsum.photos/1920/1080/?random=1">
+        <h2 class="h2 image-title" data-scroll data-scroll-speed="2">
+          OOOOOOO
+        </h2>
+      </section>
+    </div>
 
-        <section id="img-2" class="image">
-          <img class="image-bg" src="https://picsum.photos/1920/1080/?random=2">
-          <h2 class="image-title" data-scroll data-scroll-speed="2">
-            OOOOOOO
-          </h2>
-        </section>
-      </div>
+
+    <!-- img-2 -->
+    <div data-scroll-section>
+      <section id="img-2" class="image" data-scroll>
+        <img class="image-bg" src="https://picsum.photos/1920/1080/?random=2">
+        <h2 class="h2 image-title" data-scroll data-scroll-speed="2">
+          OOOOOOO
+        </h2>
+      </section>
+    </div>
+
+
+    <!-- btn open -->
+    <div data-scroll-section>
+      <section id="open" class="open" data-scroll>
+        <h2 class="h2 open-title">Do you want to open a surprise?</h2>
+        <button id="open-btn" class="open-btn">
+          Open !
+        </button>
+
+        <div class="open-content hide">
+          <h3 class="h3 open-content__title">
+            SURPRISE !!!
+          </h3>
+        </div>
+      </section>
     </div>
   </div>
 
